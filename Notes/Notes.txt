@@ -1,0 +1,61 @@
+When the name of the fucntion and class are same, we call it as constructor. It doesn't require a function call statement. Java complier implicitly calls the fucntion in the backend. A constructor can also be private, to prevent the user to create a new object directly. 
+=========================================================================
+Polymorphism means that the same method or interface can perform different actions depending on the object that is using it. ()
+=========================================================================
+Inheritence is the ability to acquire to properties, behaviour, and functions of one class into another class. It ensures reusibility. (Parent child relationship)
+=========================================================================
+This keyword refers to the current object and is mainly used to resolve variable shadowing, enable constructor chaining, and support method chaining
+=========================================================================
+Function overloading in Java is a feature of object-oriented programming that allows a class to have multiple methods with the same name, provided their parameter lists are different.
+=========================================================================
+Function overriding in Java is a feature that allows a subclass (child class) to provide a specific implementation of a method that is already defined in its superclass (parent class).
+=========================================================================
+An abstract class in Java is a class declared with the `abstract` keyword that cannot be instantiated on its own and is meant to be extended by other classes. It can contain both abstract methods (methods without a body) and concrete methods (methods with implementation), along with fields and constructors. The main purpose of an abstract class is to define a common base structure for related classes while forcing subclasses to implement certain required behaviors. It’s especially useful when you want to share common code across multiple classes, enforce a consistent method structure, represent a general concept that should not exist independently, and support polymorphism by allowing different subclasses to be treated as the same base type.
+=========================================================================
+An interface in Java is a contract that defines what a class must do without telling how to do it. It declares methods that implementing classes are required to provide, separating structure from implementation. The main benefit of an interface is flexibility: different classes can implement the same interface and be treated as the same type, which enables polymorphism. This reduces dependency between parts of a program, makes code easier to extend or replace, and helps build clean, maintainable, and scalable applications.
+=========================================================================
+A class provides implementation. It can have constructors, instance variables, and fully defined methods.
+An interface defines a contract. It describes behavior but does not represent a concrete object.
+=========================================================================
+A class cannot extend an interface because extends means inheritance of implementation. An interface does not provide full implementation or object state like a class does. Instead, a class must use implements, which means it agrees to follow the contract defined by the interface.
+=========================================================================
+Class → Class → use extends
+Class → Interface → use implements
+Interface → Interface → use extends
+Class → multiple Interfaces → use implements (comma separated)
+Class → multiple Classes → ❌ not allowed
+=========================================================================
+Multi-threading is the process of accomplising 2 or more steps simultaneously at once to enhace the internal CPU and functionality. The benefits of multi-threading is that it improves performance, keeps application responsive, handle multiple user request at a single time, and also perform background activities.
+
+In Java, a thread goes through several stages during its life cycle. When a thread object is created using the `new Thread()` constructor but the `start()` method has not yet been called, it is in the New state. At this point, the thread exists only as an object in memory and is not eligible for CPU execution. Once `start()` is called, the thread moves to the Runnable state. In Java, Runnable includes both the state where a thread is ready to run and the state where it is actually running. The thread scheduler decides when the thread gets CPU time, so a Runnable thread may be actively executing or simply waiting for its turn.
+
+The term Non-Runnable is not an official state in the `Thread.State` enum, but it is commonly used to describe threads that are alive yet temporarily unable to run. This includes threads that are blocked while waiting to acquire a lock, waiting indefinitely for another thread’s action (such as through `wait()` or `join()`), or sleeping for a specific duration using `Thread.sleep()`. In these situations, the thread is still active in the system but cannot proceed until a particular condition is met, such as receiving a notification, completing a timeout, or obtaining a lock.
+
+A thread enters the Dead (or Terminated) state once its `run()` method finishes execution or if it terminates due to an uncaught exception. After reaching this state, the thread’s life cycle is complete and it cannot be restarted. Attempting to call `start()` again on a terminated thread results in an `IllegalThreadStateException`. In short, New means created but not started, Runnable means eligible to run or running, Non-Runnable refers to temporarily paused states like waiting or blocked, and Dead means execution has permanently finished.
+=========================================================================
+Exceptions that are checked at compile time. The compiler forces you to either handle them by using try-catch or declare them using throws.
+
+Usually they occur due to external issues like file handling, database access, or network problems.
+
+Examples:
+IOException
+SQLException
+FileNotFoundException
+
+Exceptions that are checked at runtime. The compiler does not force you to handle them is called as unchecked exception.
+
+They occur mainly due to programming mistakes.
+
+Examples:
+NullPointerException
+ArithmeticException
+ArrayIndexOutOfBoundsException
+=========================================================================
+
+
+
+
+
+
+
+
