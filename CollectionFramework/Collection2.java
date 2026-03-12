@@ -1,6 +1,7 @@
-//package CollectionFramework;
+package CollectionFramework;
 
-import java.util.Iterator;
+//import java.util.Iterator;
+//import java.util.ListIterator;
 //import java.util.Enumeration;
 import java.util.Vector;
 
@@ -12,19 +13,38 @@ import java.util.Vector;
 
 // Iterator Cursor: has three methods: `hasNext()`, `next()`, and `remove()`.
 
-// ListIterator Cursor: has six methods: `hasNext()`, `next()`, `remove()`, `hasPrevious()`, `previous()`, and `add()`.
+// ListIterator Cursor: has nine methods: `hasNext()`, `next()`, `remove()`, `hasPrevious()`, `previous()`, and `add()`. 'set()', 'nextIndex()', 'previousIndex()'.
 
 public class Collection2 {
     public static void main(String args[]) {
 
-        Vector<Integer> vector1 = new Vector<>();
+        Vector<Object> vector1 = new Vector<>();
         vector1.add(12);
         vector1.add(23);
         vector1.add(43);
         vector1.add(35);
         vector1.add(45);
-        int number;
-        
+        // int number;
+
+        /*
+         * ListIterator<Object> l1 = vector1.listIterator();
+         * while (l1.hasNext()) {
+         * 
+         * number = (int) l1.next();
+         * if (number == 45) {
+         * l1.remove();
+         * }
+         * 
+         * else if (number == 35) {
+         * l1.set("Python");
+         * }
+         * 
+         * else if (number == 23) {
+         * l1.add(44);
+         * }
+         * }
+         * System.out.println(vector1);
+         */
 
         /*
          * Iterator i1 = vector1.iterator();
