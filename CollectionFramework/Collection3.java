@@ -20,6 +20,12 @@ public class Collection3 {
         H1.add(40);
         H1.add(20);
         System.out.println("Hash set: " + H1);
+        System.out.println(H1.add(56));
+        System.out.println("Hash set: " + H1);
+        System.out.println(H1.remove(100));
+        System.out.println("Hash set: " + H1);
+        System.out.println(H1.size());
+        System.out.println("----------------------------------------");
 
         // LinkedHash Set
         LinkedHashSet<Integer> LH1 = new LinkedHashSet<>();
@@ -28,6 +34,7 @@ public class Collection3 {
         LH1.add(40);
         LH1.add(20);
         System.out.println("LinkedHash set: " + LH1);
+        System.out.println("----------------------------------------");
 
         // Sorted Set
         TreeSet<Integer> T1 = new TreeSet<>();
@@ -50,6 +57,7 @@ public class Collection3 {
         System.out.println("Sorted Set: " + T1);
         System.out.println(T1.pollLast());// return the value after removing the very last element from the list
         System.out.println("Sorted Set: " + T1);
+        System.out.println("----------------------------------------");
 
     }
 }

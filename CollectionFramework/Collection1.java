@@ -1,5 +1,3 @@
-package CollectionFramework;
-
 import java.util.*;
 
 public class Collection1 {
