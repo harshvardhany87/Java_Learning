@@ -3,6 +3,8 @@ import java.util.*;
 public class Prac {
     public static void main(String args[]) {
 
+        // Integer arr[] = { 1, 2, 3, 4, 5 };
+
         /*
          * Q1
          * public class Prac {
@@ -100,20 +102,71 @@ public class Prac {
          * System.out.println("Duplicate elements: " + duplicates);
          */
 
-        HashSet<Integer> set1 = new HashSet<>();
-        set1.add(11);
-        set1.add(21);
-        set1.add(31);
-        set1.add(41);
+        /*
+         * Q7
+         * Integer arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+         * 
+         * ArrayList<Integer> A1 = new ArrayList<>(Arrays.asList(arr));
+         * System.out.println("The created array is: " + A1);
+         * 
+         * Iterator<Integer> I1 = A1.iterator();
+         * 
+         * while (I1.hasNext()) {
+         * int number = (int) I1.next();
+         * if (number % 2 == 0) {
+         * I1.remove();
+         * }
+         * }
+         * 
+         * System.out.println("Latest array is: " + A1);
+         */
 
-        HashSet<Integer> set2 = new HashSet<>();
-        set2.add(11);
-        set2.add(34);
-        set2.add(35);
-        set2.add(41);
+        /*
+         * Q8
+         * Integer arr[] = { 3, 1, 2, 5, 4, 2 };
+         * 
+         * ArrayList<Integer> A1 = new ArrayList<>(Arrays.asList(arr));
+         * 
+         * TreeSet<Integer> TS1 = new TreeSet<>();
+         * 
+         * TS1.addAll(A1);
+         * System.out.println("The converted list is: " + TS1);
+         */
 
-        set1.removeAll(set2);
-        System.out.println("Difference: " + set1);
+        /*
+         * Q9
+         * Integer arr[] = { 1, 2, 3, 4, 5 };
+         * ArrayList<Integer> A1 = new ArrayList<>(Arrays.asList(arr));
+         * 
+         * int left = 0;
+         * int right = A1.size() - 1;
+         * 
+         * while (left < right) {
+         * int temp = A1.get(left);
+         * A1.set(left, A1.get(right));
+         * A1.set(right, temp);
+         * 
+         * left++;
+         * right--;
+         * }
+         * System.out.println("The reversed list is: " + A1);
+         */
+
+        /*
+         * Q10
+         * Integer arr[] = { 2, 1, 5, 3, 4 };
+         * ArrayList<Object> array = new ArrayList<>(Arrays.asList(arr));
+         * 
+         * TreeSet<Object> map = new TreeSet<>();
+         * map.addAll(array);
+         * System.out.println("The list is: " + map);
+         * 
+         * int length = map.size();
+         * System.out.println("The length is: " + length);
+         * 
+         * System.out.println("The second largest number is: " + map.lower(map.last()));
+         */
+
     }
 
 }
