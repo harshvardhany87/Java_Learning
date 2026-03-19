@@ -9,8 +9,8 @@ public class secondnumber {
 
     public static int secondLargestElement(int[] arr) {
 
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
+        int largest = Integer.MIN_VALUE; // Value is negative infinity
+        int secondLargest = Integer.MIN_VALUE; // Value is negative infinity
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > largest) {

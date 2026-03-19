@@ -167,6 +167,35 @@ public class Prac {
          * System.out.println("The second largest number is: " + map.lower(map.last()));
          */
 
+        /*
+         * Q11
+         * Integer arr[] = { 2, 49, 36, 22, 61, 32 };
+         * 
+         * int min = arr[0];
+         * int max = arr[0];
+         * 
+         * for (int i = 0; i < arr.length; i++) {
+         * if (arr[i] < min) {
+         * min = arr[i];
+         * } else if (arr[i] > max) {
+         * max = arr[i];
+         * }
+         * 
+         * }
+         * 
+         * System.out.println("Maximum number is: " + max);
+         * System.out.println("Minimum number is: " + min);
+         */
+
+        /*
+         * Q12
+         * List<Integer> list = Arrays.asList(2, 49, 36, 22, 61, 32, 49, 2, 36);
+         * 
+         * Set<Integer> unique = new LinkedHashSet<>(list);
+         * 
+         * System.out.println("Unique elements: " + unique);
+         */
+
     }
 
 }
