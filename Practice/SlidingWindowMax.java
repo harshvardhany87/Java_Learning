@@ -27,5 +27,6 @@ public class SlidingWindowMax {
         }
 
         return result;
+        // Comment
     }
 }
