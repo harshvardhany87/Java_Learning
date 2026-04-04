@@ -1,4 +1,6 @@
-package Static;
+//package Static;
+
+import java.util.Scanner;
 /* 
 class test1 {
     int x, y;
@@ -23,6 +25,8 @@ class Practice {
 
 }
     */
+
+import javax.sql.rowset.spi.SyncResolver;
 
 /* 
 class ParentClass {
@@ -729,6 +733,7 @@ public class Practice {
 }
     */
 
+/* 
 import javax.swing.*;
 import java.awt.Font;
 import java.awt.event.*;
@@ -869,5 +874,63 @@ class Practice extends JFrame {
         }
 
     }
+
+}
+    */
+
+/* 
+public class Practice {
+    public static void main(String args[]) {
+        Scanner s1 = new Scanner(System.in);
+
+        System.out.println("Enter the word: ");
+        String word = s1.next();
+
+        boolean isPalindrome = true;
+        int left = 0;
+        int right = word.length() - 1;
+
+        while (right > left) {
+            if (word.charAt(right) != word.charAt(left)) {
+                isPalindrome = false;
+                break;
+            }
+            left++;
+            right--;
+        }
+        if (isPalindrome) {
+            System.out.println("The word " + word + " is a Palindrome: ");
+        } else {
+            System.out.println("The word " + word + " is not a Palindrome: ");
+
+        }
+
+    }
+
+}
+    */
+/* 
+public class Practice {
+    public static void main(String args[]) {
+        Scanner s1 = new Scanner(System.in);
+
+        System.out.println("Enter three number: ");
+        Integer num1 = s1.nextInt();
+        Integer num2 = s1.nextInt();
+        Integer num3 = s1.nextInt();
+
+        if (num1 > num2 && num1 > num3) {
+            System.out.println("largest number is: " + num1);
+        } else if (num2 > num1 && num2 > 3) {
+            System.out.println("Largest number is: " + num2);
+        } else {
+            System.out.println("Largest number is: " + num3);
+        }
+
+    }
+}
+    */
+
+public class Practice {
 
 }
