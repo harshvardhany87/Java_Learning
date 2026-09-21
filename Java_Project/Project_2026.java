@@ -48,6 +48,7 @@ public class Project_2026 {
 }
     */
 
+/* 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -58,34 +59,75 @@ import java.util.Scanner;
 class Project_2026 {
     public static void main(String args[]) {
 
-        Statement stmt;
-        ResultSet rs;
-        PreparedStatement pmst;
-        Connection con;
-
         try {
+
+            Statement stmt;
+            ResultSet rs;
+            PreparedStatement psmt;
+            Connection con;
 
             String url = "jdbc:postgresql://localhost:5432/demoDB";
             String user_name = "postgres";
             String password = "0617";
 
             con = DriverManager.getConnection(url, user_name, password);
-            System.out.println("Connection Successfull: ");
-
-            stmt = con.createStatement();
+            System.out.println("Connection Successful");
 
             Scanner sc = new Scanner(System.in);
-            System.out.println("Enter the user ID of the employee: ");
+            System.out.println("Enter the employee id = ");
             int result = sc.nextInt();
 
-            rs = stmt.executeQuery("select * from staff where id = " + result);
+            stmt = con.createStatement();
+            rs = stmt.executeQuery("select * from staff where ID = " + result);
 
             while (rs.next()) {
-                System.out.println(rs.getString("name") + " = " + rs.getInt("salary"));
+                System.out.println(rs.getString("name") + " " + rs.getInt("salary"));
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+    }
+}
+    */
+
+import java.sql.Connection;
+import java.sql.DriverAction;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+class Project_2026 {
+    public static void main(String args[]) {
+
+        try {
+
+            Connection con;
+            PreparedStatement psmt;
+            ResultSet rs;
+
+            String url = "jdbc:postgresql://localhost:5432/demoDB";
+            String user_name = "postgres";
+            String password = "0617";
+
+            con = DriverManager.getConnection(url, user_name, password);
+            System.out.println("Connection Successful");
+
+            psmt = con.prepareStatement("delete from staff where id = 5");
+
+            int result = psmt.executeUpdate();
+            System.out.println(result);
+
+            if (result > 0) {
+                System.out.println("Delete Successful: ");
+
+            } else {
+                System.err.println("Delete Unsuccessful:");
             }
 
         } catch (Exception e) {
             System.out.println(e);
         }
+
     }
 }
