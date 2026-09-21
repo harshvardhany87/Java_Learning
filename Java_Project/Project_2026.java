@@ -176,7 +176,7 @@ class Project_2026 {
             psmt = con.prepareStatement("Insert into staff (id, name, mob, salary) values(?, ?, ?, ?)");
             psmt.setInt(1, ID_result);
             psmt.setString(2, name_result);
-            psmt.setString(3, mobile_result);
+            psmt.setString(3, mobile_result); 
             psmt.setInt(4, salary_result);
 
             int result = psmt.executeUpdate();
@@ -195,6 +195,7 @@ class Project_2026 {
 }
     */
 
+/* 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -250,5 +251,12 @@ class Project_2026 {
         } catch (Exception e) {
             System.out.println(e);
         }
+    }
+}
+    */
+
+class Project_2026 {
+    public static void main(String args[]) {
+
     }
 }
