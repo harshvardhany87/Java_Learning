@@ -134,6 +134,7 @@ class Project_2026 {
 }
     */
 
+/* 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -190,5 +191,64 @@ class Project_2026 {
             System.out.println(e);
         }
 
+    }
+}
+    */
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Scanner;
+
+class Project_2026 {
+    public static void main(String args[]) {
+        try {
+
+            Connection con;
+            PreparedStatement psmt;
+            ResultSet rs;
+
+            String url = "jdbc:postgresql://localhost:5432/demoDB";
+            String user_name = "postgres";
+            String passworwd = "0617";
+
+            con = DriverManager.getConnection(url, user_name, passworwd);
+            System.out.println("Connection Successful");
+
+            Scanner name = new Scanner(System.in);
+            System.out.println("Enter the Name of the user: ");
+            String name_result = name.next();
+
+            Scanner mobile = new Scanner(System.in);
+            System.out.println("Enter the Mobile of the user: ");
+            String mobile_result = mobile.next();
+
+            Scanner salary = new Scanner(System.in);
+            System.out.println("Enter the Salary of the user: ");
+            int salary_result = salary.nextInt();
+
+            Scanner ID = new Scanner(System.in);
+            System.out.println("Enter the ID of the user: ");
+            int ID_result = ID.nextInt();
+
+            psmt = con.prepareStatement("update staff set name = ?, mob = ?, salary = ? where id = ?");
+            psmt.setString(1, name_result);
+            psmt.setString(2, mobile_result);
+            psmt.setInt(3, salary_result);
+            psmt.setInt(4, ID_result);
+
+            int update_result = psmt.executeUpdate();
+
+            if (update_result > 0) {
+                System.out.println("Update Successful");
+
+            } else {
+                System.err.println("Update Unsuccessful");
+            }
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
