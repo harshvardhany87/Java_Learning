@@ -1,0 +1,42 @@
+22-Sep-2026 13:48:54.774 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.27
+22-Sep-2026 13:48:54.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 14:18:31 UTC
+22-Sep-2026 13:48:54.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.27.0
+22-Sep-2026 13:48:54.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+22-Sep-2026 13:48:54.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            26.6.2
+22-Sep-2026 13:48:54.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+22-Sep-2026 13:48:54.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home
+22-Sep-2026 13:48:54.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS-69
+22-Sep-2026 13:48:54.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+22-Sep-2026 13:48:54.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27
+22-Sep-2026 13:48:54.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/conf/logging.properties
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27
+22-Sep-2026 13:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/temp
+22-Sep-2026 13:48:54.849 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/harshvardhanyadav/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+22-Sep-2026 13:48:55.021 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+22-Sep-2026 13:48:55.073 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [403] milliseconds
+22-Sep-2026 13:48:55.088 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+22-Sep-2026 13:48:55.088 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.27]
+22-Sep-2026 13:48:55.092 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/docs]
+22-Sep-2026 13:48:55.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/docs] has finished in [110] ms
+22-Sep-2026 13:48:55.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/manager]
+22-Sep-2026 13:48:55.222 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/manager] has finished in [18] ms
+22-Sep-2026 13:48:55.222 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/examples]
+22-Sep-2026 13:48:55.905 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/examples] has finished in [683] ms
+22-Sep-2026 13:48:55.905 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/ROOT]
+22-Sep-2026 13:48:55.913 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/ROOT] has finished in [7] ms
+22-Sep-2026 13:48:55.913 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/host-manager]
+22-Sep-2026 13:48:55.921 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/host-manager] has finished in [8] ms
+22-Sep-2026 13:48:55.922 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+22-Sep-2026 13:48:55.927 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [853] milliseconds
