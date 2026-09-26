@@ -13,6 +13,8 @@
 </head>
 <body>
 
+    <form action="Sdash.jsp" method="get">  
+
     <%
 
             Connection con = null;
@@ -43,6 +45,7 @@
         }
     
     %>
+    </form> 
     
 </body>
 </html>

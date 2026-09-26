@@ -1,30 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Staff Registration</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at top left, rgba(99, 102, 241, 0.35), transparent 35%),
+                radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.25), transparent 35%),
+                linear-gradient(135deg, #0f172a, #111827, #1e293b);
+            position: relative;
+        }
+
+        body::before,
+        body::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(10px);
+            opacity: 0.5;
+        }
+
+        body::before {
+            width: 260px;
+            height: 260px;
+            background: #4f46e5;
+            top: -80px;
+            left: -60px;
+        }
+
+        body::after {
+            width: 300px;
+            height: 300px;
+            background: #0ea5e9;
+            bottom: -100px;
+            right: -80px;
+        }
+
+        .registration-card {
+            position: relative;
+            z-index: 2;
+
+            width: 100%;
+            max-width: 460px;
+
+            padding: 42px 36px;
+
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 22px;
+
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+        }
+
+        .registration-card h1 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .registration-card p {
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            color: #e2e8f0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 13px 14px;
+
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 11px;
+
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+
+            font-size: 15px;
+            outline: none;
+
+            transition: 0.25s;
+        }
+
+        .form-group input::placeholder {
+            color: #94a3b8;
+        }
+
+        .form-group input:focus {
+            border-color: #818cf8;
+            box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.15);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+
+            border: none;
+            border-radius: 11px;
+
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            color: white;
+
+            font-size: 16px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
+
+            transition: 0.25s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(79, 70, 229, 0.45);
+        }
+
+        .login-link {
+            margin-top: 22px;
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            color: #a5b4fc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-link a:hover {
+            color: white;
+        }
+
+        @media (max-width: 500px) {
+
+            .registration-card {
+                margin: 20px;
+                padding: 32px 24px;
+            }
+
+        }
+
+    </style>
 </head>
+
 <body>
-    <center> 
-    <h1>
-        Staff Registration
-    </h1>
 
-    <form action="staff.jsp" method="get">
+    <div class="registration-card">
 
-        <input type ="number" placeholder=" Staff ID" name = "Staff_ID"><br><br>
-        <input type ="text" placeholder="Staff Name" name = "Staff_Name"><br><br>
-        <input type ="text" placeholder="Staff Mobile" name = "Staff_Mobile"><br><br>
-        <input type ="number" placeholder="Staff Salary" name = "Staff_Salary"><br><br>
-        <input type = "submit"><br>
+        <h1>Staff Registration</h1>
 
-        <a href="Login.html"> Already Registered? </a>
+        <p>Create your staff account securely</p>
 
-    </form>
-    </center>
-    
+        <form action="staff.jsp" method="get">
+
+            <div class="form-group">
+                <label for="Staff_ID">Staff ID</label>
+                <input
+                    type="number"
+                    id="Staff_ID"
+                    name="Staff_ID"
+                    placeholder="Enter staff ID"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="Staff_Name">Staff Name</label>
+                <input
+                    type="text"
+                    id="Staff_Name"
+                    name="Staff_Name"
+                    placeholder="Enter full name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="Staff_Mobile">Mobile Number</label>
+                <input
+                    type="text"
+                    id="Staff_Mobile"
+                    name="Staff_Mobile"
+                    placeholder="Enter mobile number"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="Staff_Salary">Staff Salary</label>
+                <input
+                    type="number"
+                    id="Staff_Salary"
+                    name="Staff_Salary"
+                    placeholder="Enter salary"
+                    required
+                >
+            </div>
+
+            <input
+                type="submit"
+                value="Create Account"
+                class="submit-btn"
+            >
+
+        </form>
+
+        <div class="login-link">
+            Already registered?
+            <a href="Login.html">Login here</a>
+        </div>
+
+    </div>
+
 </body>
 </html>
-
-<!-- http://localhost:8080/JSPPractice/staff.html -->
