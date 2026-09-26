@@ -1,51 +1,91 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<%@ page import = " java.sql.*"%>
-
+<%@ page import="java.sql.*" %>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=!, initial-scale=1.0">
-    <title>Student Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login</title>
 </head>
+
 <body>
 
-    <form action="Sdash.jsp" method="get">  
+<%
 
-    <%
+    Connection con = null;
+    PreparedStatement psmt = null;
+    ResultSet rs = null;
 
-            Connection con = null;
-            Statement stmt = null;
-            ResultSet rs = null;
+    try {
 
-        try{
-            String umobile = request.getParameter("umobile");
+        String umobile = request.getParameter("umobile");
 
-            Class.forName("org.postgresql.Driver");
-            con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres","0617");
-            out.println("Connection Successful: <br>");
+        Class.forName("org.postgresql.Driver");
 
-            stmt = con.createStatement();
-            rs = stmt.executeQuery("select id, name from staff where mob = '"+umobile+"'");
+        con = DriverManager.getConnection(
+            "jdbc:postgresql://localhost:5432/demoDB",
+            "postgres",
+            "0617"
+        );
 
-            while (rs.next()){
+        psmt = con.prepareStatement(
+            "SELECT * FROM staff WHERE mob = ?"
+        );
 
-                out.println("ID: " + rs.getString(1));
-                out.println("<br>");
+        psmt.setString(1, umobile);
 
-                out.println("Name: " + rs.getString(2));
-                out.println("<br>");
-            }
+        rs = psmt.executeQuery();
 
-        }catch (Exception e){
-            out.print(e);
+        if(rs.next()) {
+
+            session.setAttribute(
+                "Staff_ID",
+                rs.getInt("id")
+            );
+
+            session.setAttribute(
+                "Staff_Name",
+                rs.getString("name")
+            );
+
+            session.setAttribute(
+                "Staff_Mobile",
+                rs.getString("mob")
+            );
+
+            session.setAttribute(
+                "Staff_Salary",
+                rs.getInt("salary")
+            );
+
+            response.sendRedirect("Sdash.jsp");
+
+        } else {
+
+            out.println("<h2>Mobile number not registered</h2>");
+
+            out.println(
+                "<a href='Login.html'>Try Again</a>"
+            );
+
+            out.println("<br><br>");
+
+            out.println(
+                "<a href='staff.html'>Register New Account</a>"
+            );
         }
-    
-    %>
-    </form> 
-    
+
+    } catch(Exception e) {
+
+        out.print(e);
+
+    }
+
+%>
+
 </body>
 </html>
