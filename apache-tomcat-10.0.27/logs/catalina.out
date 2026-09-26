@@ -141,4 +141,64 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 22-Sep-2026 14:06:20.937 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
 22-Sep-2026 14:09:46.947 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/JSPPractice]
 22-Sep-2026 14:09:46.980 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/JSPPractice] has finished in [35] ms
-java.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driver
+java.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driverjava.lang.ClassNotFoundException: org.postgresql.Driver26-Sep-2026 14:51:29.809 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Sep-2026 14:51:29.816 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Sep-2026 14:51:29.854 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Sep-2026 14:51:29.907 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Sep-2026 14:51:29.920 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Sep-2026 14:51:33.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.27
+26-Sep-2026 14:51:33.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 14:18:31 UTC
+26-Sep-2026 14:51:33.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.27.0
+26-Sep-2026 14:51:33.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+26-Sep-2026 14:51:33.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            26.6.2
+26-Sep-2026 14:51:33.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+26-Sep-2026 14:51:33.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home
+26-Sep-2026 14:51:33.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS-69
+26-Sep-2026 14:51:33.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Sep-2026 14:51:33.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27
+26-Sep-2026 14:51:33.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/conf/logging.properties
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27
+26-Sep-2026 14:51:33.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+26-Sep-2026 14:51:33.430 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/harshvardhanyadav/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+26-Sep-2026 14:51:33.602 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Sep-2026 14:51:33.614 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [378] milliseconds
+26-Sep-2026 14:51:33.629 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Sep-2026 14:51:33.629 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.27]
+26-Sep-2026 14:51:33.633 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/docs]
+26-Sep-2026 14:51:33.838 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Sep-2026 14:51:33.854 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/docs] has finished in [220] ms
+26-Sep-2026 14:51:33.855 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/manager]
+26-Sep-2026 14:51:33.925 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Sep-2026 14:51:33.928 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/manager] has finished in [73] ms
+26-Sep-2026 14:51:33.928 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/examples]
+26-Sep-2026 14:51:34.698 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Sep-2026 14:51:34.705 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/examples] has finished in [777] ms
+26-Sep-2026 14:51:34.705 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/ROOT]
+26-Sep-2026 14:51:34.750 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Sep-2026 14:51:34.751 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/ROOT] has finished in [46] ms
+26-Sep-2026 14:51:34.751 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/host-manager]
+26-Sep-2026 14:51:34.828 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Sep-2026 14:51:34.828 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/host-manager] has finished in [77] ms
+26-Sep-2026 14:51:34.828 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/JSPPractice]
+26-Sep-2026 14:51:34.866 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Sep-2026 14:51:34.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/JSPPractice] has finished in [41] ms
+26-Sep-2026 14:51:34.871 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Sep-2026 14:51:34.877 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1262] milliseconds

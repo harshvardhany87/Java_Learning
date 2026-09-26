@@ -1,0 +1,2345 @@
+26-Sep-2026 14:51:29.896 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+26-Sep-2026 14:51:29.896 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+26-Sep-2026 14:51:34.703 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+26-Sep-2026 14:51:34.703 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+26-Sep-2026 14:51:34.703 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@36361ddb')
+26-Sep-2026 14:54:06.093 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [28] in the jsp file: [/Login.jsp]
+umobile cannot be resolved to a variable
+25:             out.println("Connection Successful <br>:");
+26: 
+27:             stmt = con.createStatement();
+28:             rs = stmt.executeQuery("select id, name from staff where mob = '"+umobile+"'");
+29: 
+30:             while (rs.next()){
+31: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [28] in the jsp file: [/Login.jsp]
+umobile cannot be resolved to a variable
+25:             out.println("Connection Successful <br>:");
+26: 
+27:             stmt = con.createStatement();
+28:             rs = stmt.executeQuery("select id, name from staff where mob = '"+umobile+"'");
+29: 
+30:             while (rs.next()){
+31: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:27:46.635 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:     try {
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>";)
+25: 
+26: 
+
+
+An error occurred at line: [24] in the jsp file: [/staff.jsp]
+Syntax error, insert ")" to complete MethodInvocation
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>";)
+25: 
+26: 
+27:     }catch (Exception e){
+
+
+An error occurred at line: [24] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete Statement
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>";)
+25: 
+26: 
+27:     }catch (Exception e){
+
+
+An error occurred at line: [28] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete BlockStatements
+25: 
+26: 
+27:     }catch (Exception e){
+28:         System.out.println(e)
+29:     }
+30: 
+31:     
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:     try {
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>";)
+25: 
+26: 
+
+
+An error occurred at line: [24] in the jsp file: [/staff.jsp]
+Syntax error, insert ")" to complete MethodInvocation
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>";)
+25: 
+26: 
+27:     }catch (Exception e){
+
+
+An error occurred at line: [24] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete Statement
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>";)
+25: 
+26: 
+27:     }catch (Exception e){
+
+
+An error occurred at line: [28] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete BlockStatements
+25: 
+26: 
+27:     }catch (Exception e){
+28:         System.out.println(e)
+29:     }
+30: 
+31:     
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:28:28.547 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:     try {
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+An error occurred at line: [28] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete BlockStatements
+25: 
+26: 
+27:     }catch (Exception e){
+28:         System.out.println(e)
+29:     }
+30: 
+31:     
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:     try {
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+An error occurred at line: [28] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete BlockStatements
+25: 
+26: 
+27:     }catch (Exception e){
+28:         System.out.println(e)
+29:     }
+30: 
+31:     
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:28:40.371 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:     try {
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:     Connection con;
+17:     PreparedStatement psmt;
+18:     ResultSet rs;
+19: 
+20:     try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:     try {
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:30:02.385 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:     Connection con = null;
+17:     PreparedStatement psmt = null;
+18:     ResultSet rs = null;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:     Connection con = null;
+17:     PreparedStatement psmt = null;
+18:     ResultSet rs = null;
+19: 
+20:     try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:     Connection con = null;
+17:     PreparedStatement psmt = null;
+18:     ResultSet rs = null;
+19: 
+20:     try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:     try {
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:     Connection con = null;
+17:     PreparedStatement psmt = null;
+18:     ResultSet rs = null;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:     Connection con = null;
+17:     PreparedStatement psmt = null;
+18:     ResultSet rs = null;
+19: 
+20:     try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:     Connection con = null;
+17:     PreparedStatement psmt = null;
+18:     ResultSet rs = null;
+19: 
+20:     try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:     try {
+21: 
+22:         Class.forName("org.postgresql.Driver");
+23:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:         out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:30:43.924 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:         try {
+21: 
+22:             Class.forName("org.postgresql.Driver");
+23:             con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:             out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:         try {
+21: 
+22:             Class.forName("org.postgresql.Driver");
+23:             con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres", "0617");
+24:             out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:31:47.197 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:         try {
+21: 
+22:             Class.forName("org.postgresql.Driver");
+23:             con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres","0617");
+24:             out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:         try {
+21: 
+22:             Class.forName("org.postgresql.Driver");
+23:             con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres","0617");
+24:             out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:33:45.952 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:         try {
+21: 
+22:             Class.forName("org.postgresql.Driver");
+23:             con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres","0617");
+24:             out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:         try {
+21: 
+22:             Class.forName("org.postgresql.Driver");
+23:             con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres","0617");
+24:             out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:34:18.808 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:         try {
+21: 
+22:             Class.forName("org.postgresql.Driver");
+23:             con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres","0617");
+24:             out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [16] in the jsp file: [/staff.jsp]
+Connection cannot be resolved to a type
+13: 
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+
+
+An error occurred at line: [17] in the jsp file: [/staff.jsp]
+PreparedStatement cannot be resolved to a type
+14:     <%
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+
+
+An error occurred at line: [18] in the jsp file: [/staff.jsp]
+ResultSet cannot be resolved to a type
+15: 
+16:         Connection con = null;
+17:         PreparedStatement psmt = null;
+18:         ResultSet rs = null;
+19: 
+20:         try {
+21: 
+
+
+An error occurred at line: [23] in the jsp file: [/staff.jsp]
+DriverManager cannot be resolved
+20:         try {
+21: 
+22:             Class.forName("org.postgresql.Driver");
+23:             con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres","0617");
+24:             out.println("Connection Successful: <br>");
+25: 
+26: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:49:26.622 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/staff.jsp]
+Staff_ID cannot be resolved to a variable
+28: 
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+
+
+An error occurred at line: [32] in the jsp file: [/staff.jsp]
+Staff_Name cannot be resolved to a variable
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+Staff_Mobile cannot be resolved to a variable
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+
+
+An error occurred at line: [34] in the jsp file: [/staff.jsp]
+Staff_Salary cannot be resolved to a variable
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+
+
+An error occurred at line: [36] in the jsp file: [/staff.jsp]
+The method executeUdate() is undefined for the type PreparedStatement
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+
+
+An error occurred at line: [41] in the jsp file: [/staff.jsp]
+err cannot be resolved or is not a field
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+40:             } else{
+41:                 out.err.println("Insert Failed: ")
+42:             }
+43: 
+44:         }catch (Exception e){
+
+
+An error occurred at line: [41] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete BlockStatements
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+40:             } else{
+41:                 out.err.println("Insert Failed: ")
+42:             }
+43: 
+44:         }catch (Exception e){
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/staff.jsp]
+Staff_ID cannot be resolved to a variable
+28: 
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+
+
+An error occurred at line: [32] in the jsp file: [/staff.jsp]
+Staff_Name cannot be resolved to a variable
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+Staff_Mobile cannot be resolved to a variable
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+
+
+An error occurred at line: [34] in the jsp file: [/staff.jsp]
+Staff_Salary cannot be resolved to a variable
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+
+
+An error occurred at line: [36] in the jsp file: [/staff.jsp]
+The method executeUdate() is undefined for the type PreparedStatement
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+
+
+An error occurred at line: [41] in the jsp file: [/staff.jsp]
+err cannot be resolved or is not a field
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+40:             } else{
+41:                 out.err.println("Insert Failed: ")
+42:             }
+43: 
+44:         }catch (Exception e){
+
+
+An error occurred at line: [41] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete BlockStatements
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+40:             } else{
+41:                 out.err.println("Insert Failed: ")
+42:             }
+43: 
+44:         }catch (Exception e){
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:49:53.172 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/staff.jsp]
+Staff_ID cannot be resolved to a variable
+28: 
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+
+
+An error occurred at line: [32] in the jsp file: [/staff.jsp]
+Staff_Name cannot be resolved to a variable
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+Staff_Mobile cannot be resolved to a variable
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+
+
+An error occurred at line: [34] in the jsp file: [/staff.jsp]
+Staff_Salary cannot be resolved to a variable
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+
+
+An error occurred at line: [36] in the jsp file: [/staff.jsp]
+The method executeUdate() is undefined for the type PreparedStatement
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+
+
+An error occurred at line: [41] in the jsp file: [/staff.jsp]
+err cannot be resolved or is not a field
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+40:             } else{
+41:                 out.err.println("Insert Failed: ")
+42:             }
+43: 
+44:         }catch (Exception e){
+
+
+An error occurred at line: [41] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete BlockStatements
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+40:             } else{
+41:                 out.err.println("Insert Failed: ")
+42:             }
+43: 
+44:         }catch (Exception e){
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/staff.jsp]
+Staff_ID cannot be resolved to a variable
+28: 
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+
+
+An error occurred at line: [32] in the jsp file: [/staff.jsp]
+Staff_Name cannot be resolved to a variable
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+Staff_Mobile cannot be resolved to a variable
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+
+
+An error occurred at line: [34] in the jsp file: [/staff.jsp]
+Staff_Salary cannot be resolved to a variable
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+
+
+An error occurred at line: [36] in the jsp file: [/staff.jsp]
+The method executeUdate() is undefined for the type PreparedStatement
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+
+
+An error occurred at line: [41] in the jsp file: [/staff.jsp]
+err cannot be resolved or is not a field
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+40:             } else{
+41:                 out.err.println("Insert Failed: ")
+42:             }
+43: 
+44:         }catch (Exception e){
+
+
+An error occurred at line: [41] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete BlockStatements
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+40:             } else{
+41:                 out.err.println("Insert Failed: ")
+42:             }
+43: 
+44:         }catch (Exception e){
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:50:37.179 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/staff.jsp]
+Staff_ID cannot be resolved to a variable
+28: 
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+
+
+An error occurred at line: [32] in the jsp file: [/staff.jsp]
+Staff_Name cannot be resolved to a variable
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+Staff_Mobile cannot be resolved to a variable
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+
+
+An error occurred at line: [34] in the jsp file: [/staff.jsp]
+Staff_Salary cannot be resolved to a variable
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+
+
+An error occurred at line: [36] in the jsp file: [/staff.jsp]
+The method executeUdate() is undefined for the type PreparedStatement
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/staff.jsp]
+Staff_ID cannot be resolved to a variable
+28: 
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+
+
+An error occurred at line: [32] in the jsp file: [/staff.jsp]
+Staff_Name cannot be resolved to a variable
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+Staff_Mobile cannot be resolved to a variable
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+
+
+An error occurred at line: [34] in the jsp file: [/staff.jsp]
+Staff_Salary cannot be resolved to a variable
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+
+
+An error occurred at line: [36] in the jsp file: [/staff.jsp]
+The method executeUdate() is undefined for the type PreparedStatement
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUdate();
+37: 
+38:             if (result > 0){
+39:                 out.println("Insert Successfull: ");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:51:47.342 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/staff.jsp]
+Staff_ID cannot be resolved to a variable
+28: 
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+
+
+An error occurred at line: [32] in the jsp file: [/staff.jsp]
+Staff_Name cannot be resolved to a variable
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+Staff_Mobile cannot be resolved to a variable
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUpdate();
+
+
+An error occurred at line: [34] in the jsp file: [/staff.jsp]
+Staff_Salary cannot be resolved to a variable
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUpdate();
+37: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/staff.jsp]
+Staff_ID cannot be resolved to a variable
+28: 
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+
+
+An error occurred at line: [32] in the jsp file: [/staff.jsp]
+Staff_Name cannot be resolved to a variable
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+Staff_Mobile cannot be resolved to a variable
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUpdate();
+
+
+An error occurred at line: [34] in the jsp file: [/staff.jsp]
+Staff_Salary cannot be resolved to a variable
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUpdate();
+37: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 15:53:06.090 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/staff.jsp]
+Staff_ID cannot be resolved to a variable
+28: 
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+
+
+An error occurred at line: [32] in the jsp file: [/staff.jsp]
+Staff_Name cannot be resolved to a variable
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+Staff_Mobile cannot be resolved to a variable
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUpdate();
+
+
+An error occurred at line: [34] in the jsp file: [/staff.jsp]
+Staff_Salary cannot be resolved to a variable
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUpdate();
+37: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/staff.jsp]
+Staff_ID cannot be resolved to a variable
+28: 
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+
+
+An error occurred at line: [32] in the jsp file: [/staff.jsp]
+Staff_Name cannot be resolved to a variable
+29:             psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+Staff_Mobile cannot be resolved to a variable
+30: 
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUpdate();
+
+
+An error occurred at line: [34] in the jsp file: [/staff.jsp]
+Staff_Salary cannot be resolved to a variable
+31:             psmt.setInt(1, Staff_ID);
+32:             psmt.setString(2, Staff_Name);
+33:             psmt.setString(3, Staff_Mobile);
+34:             psmt.setInt(4, Staff_Salary);
+35: 
+36:             int result = psmt.executeUpdate();
+37: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 16:05:38.600 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+The method getString(int, String) is undefined for the type PreparedStatement
+30:             out.println("Connection Successful: <br>");
+31: 
+32:             psmt = con.prepareStatement("Select * from staff where mob = ?");
+33:             psmt.getString (1, Staff_Mobile);
+34:             rs = psmt.executeQuery();
+35: 
+36:             if (rs.next()){
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [33] in the jsp file: [/staff.jsp]
+The method getString(int, String) is undefined for the type PreparedStatement
+30:             out.println("Connection Successful: <br>");
+31: 
+32:             psmt = con.prepareStatement("Select * from staff where mob = ?");
+33:             psmt.getString (1, Staff_Mobile);
+34:             rs = psmt.executeQuery();
+35: 
+36:             if (rs.next()){
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+26-Sep-2026 16:12:42.307 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error, insert ">" to complete ReferenceType1
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error, insert "super ( ) ;" to complete Statement
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+a cannot be resolved to a type
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Constructor call must be the first statement in a constructor
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+href cannot be resolved to a variable
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Login cannot be resolved to a variable
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error on token "with", ; expected
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+same cannot be resolved to a type
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error on token "/", delete this token
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+a cannot be resolved to a type
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error, insert "super ( ) ;" to complete Statement
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Constructor call must be the first statement in a constructor
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error, insert ">" to complete ReferenceType1
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error, insert "super ( ) ;" to complete Statement
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+a cannot be resolved to a type
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Constructor call must be the first statement in a constructor
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+href cannot be resolved to a variable
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Login cannot be resolved to a variable
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error on token "with", ; expected
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+same cannot be resolved to a type
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error on token "/", delete this token
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+a cannot be resolved to a type
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Syntax error, insert "super ( ) ;" to complete Statement
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+An error occurred at line: [38] in the jsp file: [/staff.jsp]
+Constructor call must be the first statement in a constructor
+35: 
+36:             if (rs.next()){
+37:                 out.println("Already Registered: <br>");
+38:                 < a href="Login.html"> Login with same mobile number: </a>
+39:             } else {
+40:                     psmt = con.prepareStatement("Insert into staff (id, name, mob, Salary) values(?,?,?,?)");
+41: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)

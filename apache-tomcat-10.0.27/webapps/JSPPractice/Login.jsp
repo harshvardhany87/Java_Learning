@@ -15,18 +15,16 @@
 
     <%
 
-        String umobile =  request.getParameter("umobile");
-        out.println(umobile); 
-
             Connection con = null;
             Statement stmt = null;
             ResultSet rs = null;
 
         try{
+            String umobile = request.getParameter("umobile");
 
             Class.forName("org.postgresql.Driver");
             con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "postgres","0617");
-            out.println("Connection Successful <br>:");
+            out.println("Connection Successful: <br>");
 
             stmt = con.createStatement();
             rs = stmt.executeQuery("select id, name from staff where mob = '"+umobile+"'");
