@@ -1,0 +1,613 @@
+27-Sep-2026 02:24:40.898 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+27-Sep-2026 02:24:40.898 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+27-Sep-2026 15:20:33.783 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+27-Sep-2026 15:20:33.783 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+27-Sep-2026 15:20:33.783 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7063686f')
+27-Sep-2026 16:27:39.259 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/update.jsp]
+The method println(String) is undefined for the type System
+24: 
+25:             Class.forName("org.postgresql.Driver");
+26:             con = DriverManager.getConnection ("jdbc:postgresql://localhost:5432/demoDB", "localhost", "0617");
+27:             System.println("Connection Successful: ");
+28: 
+29:         }catch (Exception e){
+30:             System.out.println(e);
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/update.jsp]
+The method println(String) is undefined for the type System
+24: 
+25:             Class.forName("org.postgresql.Driver");
+26:             con = DriverManager.getConnection ("jdbc:postgresql://localhost:5432/demoDB", "localhost", "0617");
+27:             System.println("Connection Successful: ");
+28: 
+29:         }catch (Exception e){
+30:             System.out.println(e);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+27-Sep-2026 16:27:51.911 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/update.jsp]
+The method println(String) is undefined for the type System
+24: 
+25:             Class.forName("org.postgresql.Driver");
+26:             con = DriverManager.getConnection ("jdbc:postgresql://localhost:5432/demoDB", "localhost", "0617");
+27:             System.println("Connection Successful: <br> ");
+28: 
+29:         }catch (Exception e){
+30:             System.out.println(e);
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/update.jsp]
+The method println(String) is undefined for the type System
+24: 
+25:             Class.forName("org.postgresql.Driver");
+26:             con = DriverManager.getConnection ("jdbc:postgresql://localhost:5432/demoDB", "localhost", "0617");
+27:             System.println("Connection Successful: <br> ");
+28: 
+29:         }catch (Exception e){
+30:             System.out.println(e);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+27-Sep-2026 17:04:32.201 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [41] in the jsp file: [/update.jsp]
+new_Salary cannot be resolved to a variable
+38:             psmt = con.prepareStatement("update staff set name = ?, mob = ?, salary = ? where id = ?");
+39:             psmt.setString(1, New_Name);
+40:             psmt.setString(2, New_Mob);
+41:             psmt.setInt(3, new_Salary);
+42:             psmt.setInt(4, New_ID);
+43: 
+44:             int update = psmt.executeUpdate();
+
+
+An error occurred at line: [46] in the jsp file: [/update.jsp]
+Syntax error, insert ";" to complete BlockStatements
+43: 
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+
+
+An error occurred at line: [47] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+
+
+An error occurred at line: [48] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+
+
+An error occurred at line: [49] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, int)
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+52:                 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [41] in the jsp file: [/update.jsp]
+new_Salary cannot be resolved to a variable
+38:             psmt = con.prepareStatement("update staff set name = ?, mob = ?, salary = ? where id = ?");
+39:             psmt.setString(1, New_Name);
+40:             psmt.setString(2, New_Mob);
+41:             psmt.setInt(3, new_Salary);
+42:             psmt.setInt(4, New_ID);
+43: 
+44:             int update = psmt.executeUpdate();
+
+
+An error occurred at line: [46] in the jsp file: [/update.jsp]
+Syntax error, insert ";" to complete BlockStatements
+43: 
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+
+
+An error occurred at line: [47] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+
+
+An error occurred at line: [48] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+
+
+An error occurred at line: [49] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, int)
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+52:                 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+27-Sep-2026 17:05:11.774 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/update.jsp]
+Syntax error, insert ";" to complete BlockStatements
+43: 
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+
+
+An error occurred at line: [47] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+
+
+An error occurred at line: [48] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+
+
+An error occurred at line: [49] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, int)
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+52: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/update.jsp]
+Syntax error, insert ";" to complete BlockStatements
+43: 
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+
+
+An error occurred at line: [47] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+
+
+An error occurred at line: [48] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+
+
+An error occurred at line: [49] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, int)
+46:                 System.out.println("Update Successful: ")
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+52: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+27-Sep-2026 17:05:25.294 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [47] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+
+
+An error occurred at line: [48] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+
+
+An error occurred at line: [49] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, int)
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+52: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [47] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+
+
+An error occurred at line: [48] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+
+
+An error occurred at line: [49] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, int)
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+52: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+27-Sep-2026 17:09:42.926 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [47] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+
+
+An error occurred at line: [48] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+
+
+An error occurred at line: [49] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, int)
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+52: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [47] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+44:             int update = psmt.executeUpdate();
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+
+
+An error occurred at line: [48] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, String)
+45:             if (update > 0){
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+
+
+An error occurred at line: [49] in the jsp file: [/update.jsp]
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, int)
+46:                 System.out.println("Update Successful: ");
+47:                 session.getAttribute("Staff_Name", New_Name);
+48:                 session.getAttribute("Staff_Mobile", New_Mob);
+49:                 session.getAttribute("Staff_Salary", New_Salary);
+50: 
+51:                 response.sendRedirect("Sdash.jsp");
+52: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Update Information</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at top left,
+                    rgba(99, 102, 241, 0.32),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at bottom right,
+                    rgba(14, 165, 233, 0.24),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #0f172a,
+                    #111827,
+                    #1e293b
+                );
+
+            color: white;
+
+            overflow: hidden;
+        }
+
+        .update-card {
+
+            width: 100%;
+            max-width: 460px;
+
+            padding: 42px 38px;
+
+            background:
+                rgba(255, 255, 255, 0.08);
+
+            backdrop-filter: blur(18px);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.12);
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 25px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        .icon {
+
+            width: 60px;
+            height: 60px;
+
+            margin: 0 auto 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 16px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6366f1,
+                    #0ea5e9
+                );
+
+            font-size: 28px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(99, 102, 241, 0.35);
+        }
+
+        h1 {
+
+            text-align: center;
+
+            font-size: 30px;
+
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+
+            text-align: center;
+
+            color: #94a3b8;
+
+            font-size: 14px;
+
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: #e2e8f0;
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+        .form-group input {
+
+            width: 100%;
+
+            padding: 14px 15px;
+
+            border-radius: 11px;
+
+            border:
+                1px solid rgba(255,255,255,0.15);
+
+            background:
+                rgba(255,255,255,0.07);
+
+            color: white;
+
+            font-size: 15px;
+
+            outline: none;
+
+            transition: 0.25s;
+        }
+
+        .form-group input::placeholder {
+
+            color: #64748b;
+        }
+
+        .form-group input:focus {
+
+            border-color: #818cf8;
+
+            background:
+                rgba(255,255,255,0.10);
+
+            box-shadow:
+                0 0 0 3px
+                rgba(129,140,248,0.15);
+        }
+
+        .update-btn {
+
+            width: 100%;
+
+            padding: 14px;
+
+            border: none;
+
+            border-radius: 11px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #6366f1,
+                    #4f46e5
+                );
+
+            color: white;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: 0.25s;
+
+            box-shadow:
+                0 10px 25px
+                rgba(79,70,229,0.35);
+        }
+
+        .update-btn:hover {
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(79,70,229,0.45);
+        }
+
+        .note {
+
+            margin-top: 20px;
+
+            padding: 12px;
+
+            border-radius: 10px;
+
+            background:
+                rgba(59,130,246,0.08);
+
+            border:
+                1px solid rgba(59,130,246,0.15);
+
+            color: #94a3b8;
+
+            font-size: 12px;
+
+            text-align: center;
+        }
+
+        .back-link {
+
+            text-align: center;
+
+            margin-top: 22px;
+        }
+
+        .back-link a {
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            transition: 0.2s;
+        }
+
+        .back-link a:visited {
+
+            color: #ffffff;
+        }
+
+        .back-link a:hover {
+
+            color: #a5b4fc;
+        }
+
+        @media(max-width:500px) {
+
+            .update-card {
+
+                margin: 20px;
+
+                padding: 32px 24px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="update-card">
+
+    <div class="icon">
+        ⚙️
+    </div>
+
+    <h1>
+        Update Information
+    </h1>
+
+    <div class="subtitle">
+        Modify your staff account details
+    </div>
+
+    <form action="update.jsp" method="post">
+
+        <div class="form-group">
+
+            <label for="new_Name">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="new_Name"
+                name="new_Name"
+                placeholder="Enter your updated name"
+                required
+            >
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="new_Mob">
+                Mobile Number
+            </label>
+
+            <input
+                type="text"
+                id="new_Mob"
+                name="new_Mob"
+                placeholder="Enter your updated mobile number"
+                required
+            >
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="new_Salary">
+                Salary
+            </label>
+
+            <input
+                type="number"
+                id="new_Salary"
+                name="new_Salary"
+                placeholder="Enter your updated salary"
+                required
+            >
+
+        </div>
+
+        <input
+            type="submit"
+            value="Update Information"
+            class="update-btn"
+        >
+
+    </form>
+
+    <div class="note">
+
+        Your Staff ID cannot be changed because it is your permanent account identifier.
+
+    </div>
+
+    <div class="back-link">
+
+        <a href="Sdash.jsp">
+            ← Back to Dashboard
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
