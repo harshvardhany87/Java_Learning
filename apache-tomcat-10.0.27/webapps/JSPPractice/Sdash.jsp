@@ -822,7 +822,7 @@
 
                 <div class="quick-action">
                     
-                    <a href="update.html">⚙️ Update Information</a>
+                    <a href="update.html">⚙️ Update Information: </a>
                 </div>
 
 
