@@ -69,3 +69,10 @@
 0:0:0:0:0:0:0:1 - - [27/Sep/2026:17:32:24 +0900] "GET /JSPPractice/Sdash.jsp HTTP/1.1" 200 13304
 0:0:0:0:0:0:0:1 - - [27/Sep/2026:17:33:11 +0900] "GET /JSPPractice/Sdash.jsp HTTP/1.1" 200 13304
 0:0:0:0:0:0:0:1 - - [27/Sep/2026:17:33:13 +0900] "GET /JSPPractice/Sdash.jsp HTTP/1.1" 200 13304
+0:0:0:0:0:0:0:1 - - [27/Sep/2026:17:33:53 +0900] "GET /JSPPractice/update.html HTTP/1.1" 200 6660
+0:0:0:0:0:0:0:1 - - [27/Sep/2026:17:41:46 +0900] "GET /JSPPractice/Login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [27/Sep/2026:17:41:53 +0900] "GET /JSPPractice/Login.jsp?umobile=25229589 HTTP/1.1" 200 340
+0:0:0:0:0:0:0:1 - - [27/Sep/2026:17:43:25 +0900] "GET /JSPPractice/Login.jsp?umobile=25229589 HTTP/1.1" 200 340
+0:0:0:0:0:0:0:1 - - [27/Sep/2026:17:45:24 +0900] "GET /JSPPractice/Login.jsp?umobile=25229589 HTTP/1.1" 200 3914
+0:0:0:0:0:0:0:1 - - [27/Sep/2026:17:45:32 +0900] "GET /JSPPractice/Login.jsp?umobile=e HTTP/1.1" 200 3914
+0:0:0:0:0:0:0:1 - - [27/Sep/2026:17:45:33 +0900] "GET /JSPPractice/staff.html HTTP/1.1" 304 -
