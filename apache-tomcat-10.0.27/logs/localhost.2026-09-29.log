@@ -1,3 +1,438 @@
 29-Sep-2026 13:57:13.166 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
 29-Sep-2026 13:57:13.166 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
 29-Sep-2026 13:57:13.166 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@36361ddb')
+29-Sep-2026 14:49:59.902 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPPractice] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [53] in the jsp file: [/attendance.jsp]
+connection cannot be resolved to a type
+50: 
+51: <%
+52: 
+53:     connection con = null;
+54:     ResultSet rs = null;
+55:     PreparedStatement psmy = null;
+56: 
+
+
+An error occurred at line: [54] in the jsp file: [/attendance.jsp]
+ResultSet cannot be resolved to a type
+51: <%
+52: 
+53:     connection con = null;
+54:     ResultSet rs = null;
+55:     PreparedStatement psmy = null;
+56: 
+57:     try {
+
+
+An error occurred at line: [55] in the jsp file: [/attendance.jsp]
+PreparedStatement cannot be resolved to a type
+52: 
+53:     connection con = null;
+54:     ResultSet rs = null;
+55:     PreparedStatement psmy = null;
+56: 
+57:     try {
+58: 
+
+
+An error occurred at line: [60] in the jsp file: [/attendance.jsp]
+DriverManager cannot be resolved
+57:     try {
+58: 
+59:         Class.forName("org.postgresql.Driver");
+60:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "localhost", "0617");
+61: 
+62:         LocalDate today = LocalDate.now();
+63:         LocalTime currentTime = LocalTime.now();
+
+
+An error occurred at line: [62] in the jsp file: [/attendance.jsp]
+Duplicate local variable today
+59:         Class.forName("org.postgresql.Driver");
+60:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "localhost", "0617");
+61: 
+62:         LocalDate today = LocalDate.now();
+63:         LocalTime currentTime = LocalTime.now();
+64: 
+65:         psmt = con.prepareStatement("Select * from attendance" + "where staff_id = ? and attendance_id = ?");
+
+
+An error occurred at line: [65] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved to a variable
+62:         LocalDate today = LocalDate.now();
+63:         LocalTime currentTime = LocalTime.now();
+64: 
+65:         psmt = con.prepareStatement("Select * from attendance" + "where staff_id = ? and attendance_id = ?");
+66: 
+67:         psmt.setInt(1, Staff_ID);
+68:     psmt.setDate(2, Date.valueOf(today));
+
+
+An error occurred at line: [67] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+64: 
+65:         psmt = con.prepareStatement("Select * from attendance" + "where staff_id = ? and attendance_id = ?");
+66: 
+67:         psmt.setInt(1, Staff_ID);
+68:     psmt.setDate(2, Date.valueOf(today));
+69: 
+70:     rs = psmt.executeQuery();
+
+
+An error occurred at line: [68] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+65:         psmt = con.prepareStatement("Select * from attendance" + "where staff_id = ? and attendance_id = ?");
+66: 
+67:         psmt.setInt(1, Staff_ID);
+68:     psmt.setDate(2, Date.valueOf(today));
+69: 
+70:     rs = psmt.executeQuery();
+71: 
+
+
+An error occurred at line: [68] in the jsp file: [/attendance.jsp]
+Date cannot be resolved
+65:         psmt = con.prepareStatement("Select * from attendance" + "where staff_id = ? and attendance_id = ?");
+66: 
+67:         psmt.setInt(1, Staff_ID);
+68:     psmt.setDate(2, Date.valueOf(today));
+69: 
+70:     rs = psmt.executeQuery();
+71: 
+
+
+An error occurred at line: [70] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+67:         psmt.setInt(1, Staff_ID);
+68:     psmt.setDate(2, Date.valueOf(today));
+69: 
+70:     rs = psmt.executeQuery();
+71: 
+72:     if (rs.next()) {
+73: 
+
+
+An error occurred at line: [78] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved to a variable
+75: 
+76:     } else {
+77: 
+78:         psmt = con.prepareStatement(
+79:             "INSERT INTO attendance " +
+80:             "(staff_id, attendance_date, check_in_time, status) " +
+81:             "VALUES (?, ?, ?, ?)"
+
+
+An error occurred at line: [84] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+81:             "VALUES (?, ?, ?, ?)"
+82:         );
+83: 
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+
+
+An error occurred at line: [85] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+82:         );
+83: 
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+
+
+An error occurred at line: [85] in the jsp file: [/attendance.jsp]
+Date cannot be resolved
+82:         );
+83: 
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+
+
+An error occurred at line: [86] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+83: 
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+89:         int result = psmt.executeUpdate();
+
+
+An error occurred at line: [86] in the jsp file: [/attendance.jsp]
+Time cannot be resolved
+83: 
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+89:         int result = psmt.executeUpdate();
+
+
+An error occurred at line: [87] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+89:         int result = psmt.executeUpdate();
+90: 
+
+
+An error occurred at line: [89] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+89:         int result = psmt.executeUpdate();
+90: 
+91:         if (result > 0) {
+92: 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [53] in the jsp file: [/attendance.jsp]
+connection cannot be resolved to a type
+50: 
+51: <%
+52: 
+53:     connection con = null;
+54:     ResultSet rs = null;
+55:     PreparedStatement psmy = null;
+56: 
+
+
+An error occurred at line: [54] in the jsp file: [/attendance.jsp]
+ResultSet cannot be resolved to a type
+51: <%
+52: 
+53:     connection con = null;
+54:     ResultSet rs = null;
+55:     PreparedStatement psmy = null;
+56: 
+57:     try {
+
+
+An error occurred at line: [55] in the jsp file: [/attendance.jsp]
+PreparedStatement cannot be resolved to a type
+52: 
+53:     connection con = null;
+54:     ResultSet rs = null;
+55:     PreparedStatement psmy = null;
+56: 
+57:     try {
+58: 
+
+
+An error occurred at line: [60] in the jsp file: [/attendance.jsp]
+DriverManager cannot be resolved
+57:     try {
+58: 
+59:         Class.forName("org.postgresql.Driver");
+60:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "localhost", "0617");
+61: 
+62:         LocalDate today = LocalDate.now();
+63:         LocalTime currentTime = LocalTime.now();
+
+
+An error occurred at line: [62] in the jsp file: [/attendance.jsp]
+Duplicate local variable today
+59:         Class.forName("org.postgresql.Driver");
+60:         con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/demoDB", "localhost", "0617");
+61: 
+62:         LocalDate today = LocalDate.now();
+63:         LocalTime currentTime = LocalTime.now();
+64: 
+65:         psmt = con.prepareStatement("Select * from attendance" + "where staff_id = ? and attendance_id = ?");
+
+
+An error occurred at line: [65] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved to a variable
+62:         LocalDate today = LocalDate.now();
+63:         LocalTime currentTime = LocalTime.now();
+64: 
+65:         psmt = con.prepareStatement("Select * from attendance" + "where staff_id = ? and attendance_id = ?");
+66: 
+67:         psmt.setInt(1, Staff_ID);
+68:     psmt.setDate(2, Date.valueOf(today));
+
+
+An error occurred at line: [67] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+64: 
+65:         psmt = con.prepareStatement("Select * from attendance" + "where staff_id = ? and attendance_id = ?");
+66: 
+67:         psmt.setInt(1, Staff_ID);
+68:     psmt.setDate(2, Date.valueOf(today));
+69: 
+70:     rs = psmt.executeQuery();
+
+
+An error occurred at line: [68] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+65:         psmt = con.prepareStatement("Select * from attendance" + "where staff_id = ? and attendance_id = ?");
+66: 
+67:         psmt.setInt(1, Staff_ID);
+68:     psmt.setDate(2, Date.valueOf(today));
+69: 
+70:     rs = psmt.executeQuery();
+71: 
+
+
+An error occurred at line: [68] in the jsp file: [/attendance.jsp]
+Date cannot be resolved
+65:         psmt = con.prepareStatement("Select * from attendance" + "where staff_id = ? and attendance_id = ?");
+66: 
+67:         psmt.setInt(1, Staff_ID);
+68:     psmt.setDate(2, Date.valueOf(today));
+69: 
+70:     rs = psmt.executeQuery();
+71: 
+
+
+An error occurred at line: [70] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+67:         psmt.setInt(1, Staff_ID);
+68:     psmt.setDate(2, Date.valueOf(today));
+69: 
+70:     rs = psmt.executeQuery();
+71: 
+72:     if (rs.next()) {
+73: 
+
+
+An error occurred at line: [78] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved to a variable
+75: 
+76:     } else {
+77: 
+78:         psmt = con.prepareStatement(
+79:             "INSERT INTO attendance " +
+80:             "(staff_id, attendance_date, check_in_time, status) " +
+81:             "VALUES (?, ?, ?, ?)"
+
+
+An error occurred at line: [84] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+81:             "VALUES (?, ?, ?, ?)"
+82:         );
+83: 
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+
+
+An error occurred at line: [85] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+82:         );
+83: 
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+
+
+An error occurred at line: [85] in the jsp file: [/attendance.jsp]
+Date cannot be resolved
+82:         );
+83: 
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+
+
+An error occurred at line: [86] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+83: 
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+89:         int result = psmt.executeUpdate();
+
+
+An error occurred at line: [86] in the jsp file: [/attendance.jsp]
+Time cannot be resolved
+83: 
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+89:         int result = psmt.executeUpdate();
+
+
+An error occurred at line: [87] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+84:         psmt.setInt(1, Staff_ID);
+85:         psmt.setDate(2, Date.valueOf(today));
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+89:         int result = psmt.executeUpdate();
+90: 
+
+
+An error occurred at line: [89] in the jsp file: [/attendance.jsp]
+psmt cannot be resolved
+86:         psmt.setTime(3, Time.valueOf(currentTime));
+87:         psmt.setString(4, "Present");
+88: 
+89:         int result = psmt.executeUpdate();
+90: 
+91:         if (result > 0) {
+92: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:520)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:792)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:356)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
