@@ -52,3 +52,7 @@
 27-Sep-2026 15:20:33.919 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/harshvardhanyadav/Desktop/PATHWAY/Java/apache-tomcat-10.0.27/webapps/JSPPractice] has finished in [39] ms
 27-Sep-2026 15:20:33.920 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 27-Sep-2026 15:20:33.926 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1169] milliseconds
+27-Sep-2026 17:57:14.105 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Sep-2026 17:57:14.129 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Sep-2026 17:57:14.174 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Sep-2026 17:57:14.184 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
