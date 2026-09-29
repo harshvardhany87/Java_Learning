@@ -26,3 +26,6 @@
 0:0:0:0:0:0:0:1 - - [29/Sep/2026:14:30:51 +0900] "GET /JSPPractice/Sdash.jsp HTTP/1.1" 200 13613
 0:0:0:0:0:0:0:1 - - [29/Sep/2026:14:30:53 +0900] "GET /JSPPractice/attendance.jsp HTTP/1.1" 200 14792
 0:0:0:0:0:0:0:1 - - [29/Sep/2026:14:30:58 +0900] "GET /JSPPractice/registerAttendance.jsp HTTP/1.1" 404 753
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:14:32:51 +0900] "GET /JSPPractice/Sdash.jsp HTTP/1.1" 200 13657
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:14:32:52 +0900] "GET /JSPPractice/salary.jsp HTTP/1.1" 200 14100
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:14:34:06 +0900] "GET /JSPPractice/salary.jsp HTTP/1.1" 200 14100

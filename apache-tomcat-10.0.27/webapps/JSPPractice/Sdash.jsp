@@ -671,8 +671,15 @@
 </div>
 
                 <div class="quick-action">
-                    💰 Salary Details
-                </div>
+
+    <a href="salary.jsp"
+       class="quick-action-link">
+
+        💰 Salary Details
+
+    </a>
+
+</div>
 
                 <div class="quick-action">
 
