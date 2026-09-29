@@ -660,8 +660,15 @@
                 </div>
 
                 <div class="quick-action">
-                    📅 View Attendance
-                </div>
+
+                 <a href="attendance.jsp"
+                    class="quick-action-link">
+
+                        📅 View Attendance
+
+                    </a>
+
+</div>
 
                 <div class="quick-action">
                     💰 Salary Details
