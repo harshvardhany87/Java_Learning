@@ -1,7 +1,7 @@
 package TightCoupling;
 
-public class jio {
-    void sim() {
+public class jio implements mobilesim {
+    public void sim() {
         System.out.println("Jio Sim Card");
     }
 
