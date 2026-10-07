@@ -1,4 +1,4 @@
-package Spring.TightCoupling;
+package TightCoupling;
 
 public class network {
     airtel a_sim = new airtel(); // Tight Coupling

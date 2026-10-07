@@ -1,4 +1,4 @@
-package Spring.TightCoupling;
+package TightCoupling;
 
 public class mobile {
     public static void main(String args[]) {

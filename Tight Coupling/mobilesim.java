@@ -1,4 +1,4 @@
-package Spring.TightCoupling;
+package TightCoupling;
 
 public interface mobilesim {
     void sim();
