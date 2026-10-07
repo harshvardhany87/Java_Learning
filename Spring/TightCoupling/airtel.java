@@ -1,4 +1,4 @@
-package TightCoupling;
+package Spring.TightCoupling;
 
 public class airtel implements mobilesim {
     public void sim() {
