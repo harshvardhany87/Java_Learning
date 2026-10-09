@@ -1,9 +1,10 @@
 {
     "java.project.sourcePaths": [
-        "Spring/Spring"
+        "Spring/Spring",
+        "Spring_Using_Java/Spring"
     ],
-
     "java.project.referencedLibraries": [
-        "Spring/Spring/lib/**/*.jar"
+        "Spring/Spring/lib/**/*.jar",
+        "Spring_Using_Java/Spring/lib/**/*.jar"
     ]
 }

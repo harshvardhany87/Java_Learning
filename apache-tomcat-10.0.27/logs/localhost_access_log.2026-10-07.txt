@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:42 +0900] "GET /JSPPractice/staff.html HTTP/1.1" 200 6173
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:42 +0900] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 784
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:42 +0900] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:42 +0900] "GET /apple-touch-icon.png HTTP/1.1" 404 772
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:42 +0900] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:44 +0900] "GET /JSPPractice/Login.html HTTP/1.1" 200 4980
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:44 +0900] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 784
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:44 +0900] "GET /apple-touch-icon.png HTTP/1.1" 404 772
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:44 +0900] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:49 +0900] "GET /JSPPractice/Login.jsp?umobile=8040806728 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:49 +0900] "GET /JSPPractice/Sdash.jsp HTTP/1.1" 200 13657
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:53 +0900] "GET /JSPPractice/attendance.jsp HTTP/1.1" 200 11985
+0:0:0:0:0:0:0:1 - - [07/Oct/2026:18:48:55 +0900] "POST /JSPPractice/attendance.jsp HTTP/1.1" 200 12605
