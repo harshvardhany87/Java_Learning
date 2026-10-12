@@ -1,1 +1,13 @@
 *.class
+
+# Ignore everything
+*
+
+# Allow directories so Git can find Java files
+!*/
+
+# Track Java source files
+!*.java
+
+# Track this gitignore file
+!.gitignore

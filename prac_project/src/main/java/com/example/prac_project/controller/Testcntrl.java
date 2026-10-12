@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Testcntrl {
-    @GetMapping("data")
+    @GetMapping("api/data")
     public String data() {
         return "Data will be here: ";
     }

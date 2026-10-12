@@ -1,7 +1,9 @@
 {
     "java.project.sourcePaths": [
+        "sb_methods/src/main/java/com/example/sb_methods",
+        "Spring_Using_Java/Spring",
         "Spring/Spring",
-        "Spring_Using_Java/Spring"
+        "Constructors"
     ],
     "java.project.referencedLibraries": [
         "Spring/Spring/lib/**/*.jar",

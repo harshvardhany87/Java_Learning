@@ -1,4 +1,5 @@
-package Constructors;
+//package Construct1;
+
 // When the name of the fucntion and class are same, we call it as constructor. It doesn't require a function call statement. Java complier implicitly calls the fucntion in the backend. 
 
 //Polymorphism means that the same method or interface can perform different actions depending on the object that is using it. ()
@@ -65,7 +66,7 @@ class B extends A {
 
 class Construct1 {
     public static void main(String args[]) {
-        // B newObject = new B();
+        B newObject = new B();
 
     }
 

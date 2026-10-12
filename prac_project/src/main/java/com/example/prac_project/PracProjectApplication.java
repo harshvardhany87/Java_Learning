@@ -10,6 +10,7 @@ public class PracProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PracProjectApplication.class, args);
+		System.out.println("Success....");
 
 		// Testcntrl t1 = new Testcntrl();
 		// System.out.println(t1.data());
