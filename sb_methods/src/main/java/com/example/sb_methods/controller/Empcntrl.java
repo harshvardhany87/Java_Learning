@@ -30,4 +30,9 @@ public class Empcntrl {
         return "Data will be deleted here!!: ";
     }
 
+    @PatchMapping("patchData") // update record partially
+    public String patchData() {
+        return "Data will be patched here!!: ";
+    }
+
 }
