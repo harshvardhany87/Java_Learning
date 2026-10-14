@@ -1,11 +1,13 @@
-package main.entity;
+package com.example.db_connection.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "stud")
 public class Stud {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -54,14 +56,6 @@ public class Stud {
 
     public void setCourse(String course) {
         Course = course;
-    }
-
-    public void display() {
-        System.out.println("ID is: " + ID);
-        System.out.println("First Name is: " + First_Name);
-        System.out.println("Last Name is: " + Last_Name);
-        System.out.println("Age is: " + Age);
-        System.out.println("Course is: " + Course);
     }
 
 }

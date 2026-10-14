@@ -8,5 +8,6 @@
     "java.project.referencedLibraries": [
         "Spring/Spring/lib/**/*.jar",
         "Spring_Using_Java/Spring/lib/**/*.jar"
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
