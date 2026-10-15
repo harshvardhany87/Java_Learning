@@ -1,13 +1,16 @@
+
 {
-    "java.project.sourcePaths": [
-        "sb_methods/src/main/java/com/example/sb_methods",
-        "Spring_Using_Java/Spring",
-        "Spring/Spring",
-        "Constructors"
-    ],
-    "java.project.referencedLibraries": [
-        "Spring/Spring/lib/**/*.jar",
-        "Spring_Using_Java/Spring/lib/**/*.jar"
-    ],
-    "java.configuration.updateBuildConfiguration": "interactive"
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run db_connect Spring Boot",
+      "type": "shell",
+      "command": "./gradlew bootRun",
+      "options": {
+        "cwd": "${workspaceFolder}/db_connect"
+      },
+      "problemMatcher": [],
+      "isBackground": true
+    }
+  ]
 }

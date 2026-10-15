@@ -1,4 +1,4 @@
-package com.example.db_connection.cntrl;
+package com.example.db_connect.cntrl;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.db_connection.entity.Stud;
-import com.example.db_connection.repo.Studrepo;
+import com.example.db_connect.entity.student_data;
+import com.example.db_connect.repo.Studrepo;
 
 @RestController
 public class studentcntrl {
@@ -16,12 +16,7 @@ public class studentcntrl {
     private Studrepo repo;
 
     @GetMapping("/student_data")
-    public List<Stud> getstudent_data() {
+    public List<student_data> getStudentData() {
         return repo.findAll();
-    }
-
-    @GetMapping("test")
-    public String test() {
-        return "Controller is working!";
     }
 }

@@ -1,4 +1,4 @@
-package com.example.db_connection.entity;
+package com.example.db_connect.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,15 +7,17 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "stud")
-public class Stud {
+@Table(name = "student_details")
+
+public class student_data {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private int ID;
+    private Integer ID;
     private String First_Name;
     private String Last_Name;
-    private int Age;
+    private Integer Age;
     private String Course;
 
     public int getID() {
